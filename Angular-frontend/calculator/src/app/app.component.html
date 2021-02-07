@@ -1,0 +1,49 @@
+<div class="jumbotron vertical-center"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">        
+        <table class="table">              
+          <tbody>
+            <tr>                 
+              <td class="maindisplay" colspan="4">{{ equation }}</td>                  
+            </tr>
+            <tr>                 
+              <td class="subdisplay" colspan="4">{{ result }}</td>                  
+            </tr>
+            <tr>                 
+              <td class="specialkeys" (click)="updateMem()">M+</td>
+              <td class="specialkeys" (click)="readMem()">M</td>
+              <td class="specialkeys" (click)="allClear()">AC</td>
+              <td class="specialkeys" (click)="pressKey('/')">/</td>
+            </tr>
+            <tr>                  
+              <td class="keys" (click)="pressKey('7')">7</td>
+              <td class="keys" (click)="pressKey('8')">8</td>
+              <td class="keys" (click)="pressKey('9')">9</td>  
+              <td class="specialkeys" (click)="pressKey('x')">x</td>
+            </tr>
+            <tr>                  
+              <td class="keys" (click)="pressKey('4')">4</td>  
+              <td class="keys" (click)="pressKey('5')">5</td>
+              <td class="keys" (click)="pressKey('6')">6</td>  
+              <td class="specialkeys" (click)="pressKey('-')">-</td>
+            </tr>
+            <tr>
+              <td class="keys " (click)="pressKey('3')">3</td>  
+              <td class="keys " (click)="pressKey('2')">2</td>
+              <td class="keys " (click)="pressKey('1')">1</td>  
+              <td class="specialkeys " (click)="pressKey('+')">+</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="keys" (click)="pressKey('0')">0</td>
+              <td class="specialkeys" (click)="pressKey('.')">.</td>  
+              <td class="specialkeys" (click)="getAnswerEval()">=</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+</div>

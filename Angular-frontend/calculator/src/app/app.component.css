@@ -1,0 +1,47 @@
+.vertical-center {
+    background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(100,100,199,1) 2%, rgba(0,212,255,1) 100%);
+    min-height: 100%;
+    min-height: 100vh; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+table {
+    border: 8px black solid;     
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;     
+}
+
+.subdisplay {
+    background-color: lightgrey;
+    text-align: right;
+    border-bottom: 4px black solid;
+    height: 9vh;     
+    max-width:200px;
+    word-wrap:break-word;    
+ } 
+
+ .maindisplay {
+    background-color: lightgrey;
+    text-align: left;
+    height: 9vh;    
+    max-width:200px;
+    word-wrap:break-word;   
+ } 
+
+.keys {   
+    cursor: pointer;
+    background-color: darkgrey;
+    color:white;
+}
+
+.specialkeys {   
+    cursor: pointer;
+    background-color: grey;
+    color:white;
+}
